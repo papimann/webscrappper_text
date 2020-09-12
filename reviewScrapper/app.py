@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup as bs4
 from urllib.request import urlopen as req
 
 app = Flask(__name__)  # initialising the flask app with the name 'app'
-
+CORS(app)
 
 @app.route("/", methods=['GET'])
 @cross_origin()
